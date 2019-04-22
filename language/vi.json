@@ -1,0 +1,103 @@
+{
+  "semantics": [
+    {
+      "label": "Trình chỉnh sửa ba ảnh",
+      "fields": [
+        {
+          "label": "Khung cảnh",
+          "entity": "Scene",
+          "field": {
+            "fields": [
+              {
+                "label": "Loại khung cảnh",
+                "options": [
+                  {
+                    "label": "Ảnh 360"
+                  },
+                  {
+                    "label": "Ảnh tĩnh"
+                  }
+                ]
+              },
+              {
+                "label": "Hiển thị nút \"Quay lại\"",
+                "description": "Hiển thị nút điều hướng quay lại khung cảnh trước của bạn"
+              },
+              {
+                "label": "Id khung cảnh duy nhất",
+                "description": "Bắt buooijc phải là duy nhất, để điều hướng giữa các khung cảnh"
+              },
+              {
+                "label": "Tiêu đề Khung cảnh",
+                "description": "Được sử dụng để xác định khung cảnh cho tác giả"
+              },
+              {
+                "label": "Nền Khung cảnh"
+              },
+              {
+                "label": "Mô tả Khung cảnh",
+                "description": "Một đoạn văn bản có thể mô tả khung cảnh cho người dùng cuối cùng"
+              },
+              {
+                "label": "Vị trí camera ban đầu",
+                "description": "Vị trí camera khi di chuyển lên và ngang"
+              },
+              {
+                "label": "Tương tác",
+                "entity": "Interaction",
+                "field": {
+                  "fields": [
+                    {
+                      "label": "Tương tác",
+                      "description": "Điểm nóng có một tương tác"
+                    },
+                    {
+                      "label": "Vị trí tương tác",
+                      "description": "Vị trí tương tác khi di chuyển lên và ngang"
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "Bản ghi âm thanh",
+                "description": "Thêm một bản ghi âm thanh được chỉ định cho khung cảnh này."
+              }
+            ]
+          }
+        },
+        {
+          "label": "Id khung cảnh bắt đầu"
+        },
+        {
+          "label": "Bản ghi âm thanh"
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt hành vi",
+      "description": "Các tùy chọn này sẽ cho bạn điều khiển thế giới ảo thể hiện như thế nào",
+      "fields": [
+        {
+          "label": "Âm thanh chung",
+          "description": "Thêm một đoạn âm thanh có sẵn cho tất cả các cảnh theo mặc định."
+        },
+        {
+          "label": "Chất lượng dựng cảnh",
+          "description": "Chọn số lượng phân đoạn chiều rộng và chiều cao được sử dụng để hiển thị cảnh. Điều này ảnh hưởng trực tiếp đến mức chất lượng của cảnh, hãy thử tăng chất lượng nếu một cảnh trông \"thành khối\" hoặc \"lượn sóng\" được nhìn thấy trong các cảnh. Lưu ý rằng kết xuất chất lượng cao hơn sẽ mất nhiều thời gian hơn để tải.",
+          "options": [
+            {
+              "label": "Chất lượng cao (128x128)"
+            },
+            {
+              "label": "Chất lượng trung bình (64x64)"
+            },
+            {
+              "label": "Chất lượng thấp (16x16)"
+            }
+          ],
+          "default": "cao"
+        }
+      ]
+    }
+  ]
+}
